@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>LOGO</h1>
+        <div class="cart-container">
+          <span class="cart-count" id="cartCount">0</span>
+          <img
+            src="image/shopping-cart-white-icon.png"
+            class="cart"
+            alt=""
+            onclick="openCart()"
+          />
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <div class="cards"></div>
+      </section>
+    </main>
+
+    <!-- Cart Popup -->
+    <div class="cart-popup" id="cartPopup">
+      <div class="cart-popup-content">
+        <h2>Your Cart</h2>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="total">
+          <p>Total: Rs <span id="totalAmount">0</span></p>
+        </div>
+        <button class="close-btn" onclick="closeCart()">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
